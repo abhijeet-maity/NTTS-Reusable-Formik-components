@@ -1,52 +1,116 @@
+
 .App {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  padding: 40px 0;
 }
+
+/* Form Container */
 .form {
-  margin-left: 2rem;
-}
-
-input[type='text'],
-input[type='email'],
-textarea{ 
-  display: block;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   width: 400px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.428;
-  color: #555;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  text-align: center;
 }
 
+/* Form Controls */
 .form-controls {
   margin-bottom: 20px;
+  text-align: left;
 }
+
+/* Labels */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Inputs & Textarea */
+input[type='text'],
+input[type='email'],
+textarea,
+select{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Focus Effect */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Select Dropdown */
+select {
+  appearance: none;
+  background: white;
+  cursor: pointer;
+}
+
+/* Error Messages */
 .error {
-  width: 5rem;
-  padding: 4px 7px;
+  display: inline-block;
+  width: auto;
+  padding: 6px 12px;
   font-size: 14px;
-  margin-top: 4px;
+  margin-top: 5px;
   text-align: center;
   border-radius: 5px;
   background-color: red;
   color: white;
 }
 
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Section Backgrounds */
 .Sample-Formik {
   padding: 20px;
-  background-color: yellow;
+  background-color: #ffdd57;
   border-radius: 10px;
 }
+
 .YUP {
   padding: 20px;
-  background-color: yellowgreen;
+  background-color: #28a745;
   border-radius: 10px;
+  color: white;
 }
+
 .Formik-component {
   padding: 20px;
-  background-color: cornflowerblue;
+  background-color: #007bff;
   border-radius: 10px;
+  color: white;
 }
